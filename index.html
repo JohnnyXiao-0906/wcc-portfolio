@@ -2,43 +2,68 @@
 <html>
     <head>
         <meta charset="UTF-8">
+
+        <!-- meta viewport tag needed to make site responsive on mobile devices https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
         <title>WCC Portfolio</title>
+
+        <link rel="stylesheet" href="./css/style.css">
+
     </head>
     <body>
-        <h1>Zihao Xiao</h1>
 
-        <h3>Term 1</h3>
+        <header>
+            <h1>Zihao Xiao</h1>
 
-        <ul>
-            <li>
-                <p><a href="https://vimeo.com/manage/videos/785743336">Truth Lies With Shadow</a></p>
-            </li>
+        </header>
 
-            <li>
-                <p><a href="/">Title of Project</a></p> 
-            </li>
+        <main>
+            <h3>Term 1</h3>
+            <section class="flex-container">
+                <div class="flex-item"> 
+                    <a href="./html-demo-page">
+                        <h4>Truth Lies with Shadows</h4>
+                    </a>
+                </div>
+            </section>
 
-            <li>
-                <p><a href="/">Title of Project</a></p>
-            </li>
+            <h3>Term 2</h3>
+            <section class="flex-container">
 
-            <li>
-                <p><a href="/">Title of Project</a></p>
-            </li>
+                <div class="flex-item"> 
+                    <a href="https://johnnyxiao-0906.github.io/POEM/">
+                        <h4>1. Hypertext Concrete Poem</h4>
+                    </a>
+                </div>
+         
+                <div class="flex-item"> 
+                    <a href="https://rebecca-aston.github.io/simple-responsive-3D/">
+                        <h4>2. Simple Responsive p5 Code Example </h4>
+                    </a>
+                </div>
 
-        </ul>
+                <div class="flex-item"> 
+                    <a href="#">
+                        <h4>3.</h4>
+                    </a>
+                </div>
 
-        <h3>Term 2</h3>
+                <div class="flex-item"> 
+                    <a href="#">
+                        <h4>4.</h4>
+                    </a>
+                </div>
 
-        <ul>
-            <li>
-                <a href="https://johnnyxiao-0906.github.io/POEM/">Week 1: Hypertext Concrete Poem</a>
-            </li>
+                    <!-- Keep adding per week -->
 
-            <li>
-                <a href="https://vimeo.com/manage/videos/785743336">Week 2: Re-factor</a>
-            </li>
-        </ul>
+                
+            </section> 
+
+        </main>
+        <footer>
+           
+        </footer>
 
     </body>
 </html>
