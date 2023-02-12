@@ -1,6 +1,10 @@
 
 /*This is a comment in CSS*/
-
+body{
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    background-image: url(../assets/images/p1.jpg);
+}
 nav{
     padding:10px 3%;
 }
