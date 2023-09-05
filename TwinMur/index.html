@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <!-- meta viewport tag needed to make site responsive on mobile devices https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>WCC Portfolio - Demo Page</title>
+
+        <!-- including for some global styling -->
+        <link rel="stylesheet" href="../css/style.css">
+
+    </head>
+    <body>
+        <!-- if you have sub-pages think about adding a simple back button -->
+        <nav>
+            <a href="../">HOME</a>
+        </nav>
+        <header class="documentation-header">
+            <section class="center-text">
+                <h1>TwineMur</h1>
+                <h2>Zihao Xiao</h6>
+                <p>A new media installation art based on physical computing that explores the moment and eternity in life.</p> 
+            </section>
+        </header>
+
+        <main class="documentation-page">
+            <section>
+                <div class="responsive-video centered-content">
+                    <iframe title="youtube-player" src="https://www.youtube.com/embed/8VtpkFlwndg" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </section>
+            <section>
+                <h3>Introduction</h3>
+                <h3><p>Since ancient times, humans have been filled with curiosity and awe towards the universe. Through the integration of science and art, humans continually explore and reveal the mysteries of the universe. This research is based on the ml5 library's facial recognition technology and the chromotome color palette, with the gravitational theory at its core. A visual human-computer interaction expression is implemented using p5js, which I call "The Dance of the Universe."</p></h3>
+            </section>
+            <section>
+                <h3>Concept and Background Research</h3>
+                
+                <h3><p>Science and art have tendencies to merge in many aspects, especially in the field of visual arts. This project demonstrates a visual interaction effect combining ml5-based facial recognition technology, the Chromotome color palette, and the theory of universal gravitation. It connects human visual behavior with the fundamental forces in astrophysics to illustrate the relationship between humans and the universe. I refer to this relationship as the Dance of the Universe.</p>
+                <p>Universal gravitation is an important mechanical concept in astrophysics and plays a crucial role in the cosmos. It refers to the mutual attraction between celestial bodies due to their mass. This force was proposed by British physicist Isaac Newton in the 17th century. According to Newton's law of universal gravitation, there is gravitational force between any two objects with mass, which is directly proportional to the product of their masses and inversely proportional to the square of the distance between them. This force acts throughout the universe, allowing celestial bodies to maintain stable orbits, such as Earth's revolution around the Sun and the Moon's revolution around Earth. </p>
+                <p>A dynamic elliptical model is used to simulate the motion of celestial bodies. Gravitation causes mutual attraction between celestial bodies, leading them to move along specific trajectories. In the Dance of the Universe, the audience can observe the motion of celestial bodies caused by gravitational forces, such as planets revolving around stars. The direction and magnitude of gravity in space define these orbits. The dynamic elliptical model can demonstrate the mutual attraction between celestial bodies due to gravity, allowing the audience to intuitively perceive the existence of gravitational force.</p>
+                <p>In summary, the dynamic elliptical model is used in the Dance of the Universe project to present the motion of celestial bodies mutually attracted by universal gravitation. By combining the representation of universal gravitation in visual arts, the Dance of the Universe presents a vivid and intuitive cosmic force field image to the audience. This helps them better understand and feel the interconnections within the universe and the essential role of universal gravitation in astrophysics.</p>
+                <p>Facial recognition technology allows interaction between the audience and the artwork. While viewing the artwork, the audience's gaze is captured in real-time through a camera and fed back into the artwork. I set the movement of the audience's eyes to cause changes in the celestial bodies' mass and distance between them, which in turn alters the gravitational force and the celestial bodies' trajectories. This interactivity allows the representation of celestial body trajectories to change with the audience's gaze, providing an immersive viewing experience.</p>
+                <p>By combining the theory of universal gravitation with the dynamic elliptical model and utilizing facial recognition technology, the Dance of the Universe presents a cosmic landscape full of scientific and artistic charm to the audience. This innovative visual art form not only expands people's understanding of the mysteries of the universe but also provides new possibilities for the fusion of science, art, and human interaction. In future research, I will continue to explore the application of more astrophysical concepts in the field of visual arts and further optimize the visual effects and interactive performance of the Dance of the Universe, offering the audience a richer journey in exploring the cosmos. </p></h3>
+                    
+                <!-- if you have a full width image try make it not too tall -->
+                <img src="../assets/images/1.jpg"/>
+                
+            </section>
+            <section>
+                <h3>Technical Implementation</h3>
+
+                <div class="flex-container flex-basis-third">
+                    <div class="flex-item">
+                        <img src="../assets/images/v2.png"/>
+                    </div>
+                    <div class="flex-item">
+                        <img src="../assets/images/v3.png"/>
+                    </div>
+                    <div class="flex-item">
+                        <img src="../assets/images/v4.png"/>
+                    </div>
+                </div>
+                
+            <h3><p> In this project, I implemented the following technical approaches to achieve the integration of the theory of universal gravitation with a dynamic elliptical model, and used facial recognition technology to present the cosmic dance, offering an immersive viewing experience for the audience:</p>
+                <p> 1. Facial recognition with the ml5.js library: 
+                    ml5.js is an open-source machine learning library based on TensorFlow.js, providing easy-to-use APIs and pre-trained models that can conveniently integrate facial recognition features into projects. I utilized the face-api model from the ml5.js library to capture the audience's eye position information in real-time.</p>
+                <p> 2. Celestial motion simulation: 
+                    I developed a dynamic elliptical model using p5.js, calculated the gravitational interactions between celestial bodies based on the theory of universal gravitation, and updated the positions and trajectories of celestial bodies accordingly. I also considered the impact of celestial body mass and mutual distance on gravitational force.</p>
+                <p> 3. Association between the audience's line of sight and celestial parameters: 
+                    By capturing the audience's eye position information, I mapped the line of sight direction to the celestial bodies' mass and mutual distance parameters. For example, when the audience's line of sight moved to the left, the mass of the celestial body increased; when moving to the right, the mass decreased. In this way, I achieved real-time interaction between the audience's line of sight and celestial body trajectories.</p>
+                <p> 4. Visual rendering using the Chromotome color palette: 
+                    To enhance the visual effects, I employed the chromotome.js library to generate a unique color palette. Once the audience's line of sight left the camera, the colors in the palette dynamically adjusted to achieve varying visual art effects.</p>   
+                    <p> 5. Display and interaction interface: 
+                        I used the HTML5 Canvas API to create a full-screen display interface, drawing the celestial body trajectories and color changes in real-time. Additionally, to facilitate audience interaction with the artwork, I set the captured eye movement information from the camera as a small ball displayed in real-time on the canvas, allowing the audience to see their eye position information and interaction effects with the artwork.</p>
+                    <p> By implementing the above technical approaches, I successfully realized the Cosmic Dance project, offering a unique visual experience that combines science, art, and human interaction for the audience.</p></h3>
+            
+                <!-- example of styling for three images, you can write your own styling -->
+                
+
+                <!-- default flex item is for 4 & follows media query styling for home page -->
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <img src="../assets/images/v6.png"/>
+                    </div>
+                    <div class="flex-item">
+                        <img src="../assets/images/v7.png"/>
+                    </div>
+                    <div class="flex-item">
+                        <img src="../assets/images/v8.png"/>
+                    </div>
+                    <div class="flex-item">
+                        <img src="../assets/images/v5.png"/>
+                    </div>
+                </div>
+         
+            </section>
+            <section>
+                <h3>Reflection and Future Development</h3>
+            <h3><p>This study proposes a novel visual art research method combining facial recognition technology and the universal gravitation model. However, in practical applications, there may be limitations in technical implementation, such as the accuracy of facial recognition technology and the complexity of visual art expression. Therefore, future research could further optimize facial recognition technology, enhancing its accuracy and real-time performance to better capture viewers' visual behavior. By using facial recognition technology, this study captured the visual behavior of viewers while watching the Cosmic Dance. This data will provide us with information about viewer's visual focus points, gaze paths, and viewing duration, helping further optimize the visual effects of the artwork. </p>
+                <p>Furthermore, future research could explore combining more scientific concepts with visual art, such as incorporating electromagnetic fields, strong interactions, and other fundamental forces in astrophysics, to create richer, more appealing visual art pieces. Other sensor technologies could be combined with eye tracking technology, such as posture estimation and heart rate monitoring, to achieve more comprehensive human-computer interaction and further expand the intersection of science and art.</p>
+                <p>In conclusion, this study presents a novel research method for gravitational visual art based on facial recognition technology, providing a fresh perspective on the connection between science, art, and human interaction. With continuous technological innovation and practical exploration, I can expect to offer more diverse and engaging visual art experiences in the future while promoting the integration and development of science and art.</p></h3>
+            </section>
+            <section>
+                <h3>References</h3>
+                <ul>
+                <h3><p><li>1. Daniel Berio. “PoseNet example”. https://editor.p5js.org/eri.kalaitzidi/sketches/eXV27j8U6
+                    <div>code reference.</li></p>
+                    <p><li>2. Michael BostocK, Vadim Ogievetsky, Jeffrey Heer. “D³: Data-Driven Documents”. US. EEE Transactions on Visualization and Computer Graphics, 17(12), 2301-2309. doi: 10.1109, 2011.
+                        <div>This article introduces the D³ (Data Driven Documentation) library, which can be used to implement dynamic elliptical models and visual rendering in the Cosmic Dance project.</li></p>
+                        <p><li>3.Fritz Rohrlich. “From Paradox to Reality: Our Basic Concepts of the Physical World”. UK. Cambridge University Press. pp. 28–. ISBN 978-0-521-37605-1., 1989.
+                            <div>The basic principle of universal gravitation and related mathematical models are introduced in detail.</li></p></h3>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <!-- normally information like contact details etc  -->
+            <!-- read more about semantic HTML https://www.w3schools.com/html/html5_semantic_elements.asp -->
+            
+         </footer>
+    </body>
+</html>
